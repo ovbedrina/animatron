@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>New methods of keeping students engaged in class</title>
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+  
+  <meta name="description" content="Howdy there! Did you know that Animatron has an awesome feature that allows you to take Selfies with your webcam? Well, I’d like to give you a quick &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="https://blog.animatron.com/2016/02/23/learn-how-to-animate-your-own-selfie-photo">
+  <link href="https://blog.animatron.com/favicon.png" rel="icon">
+  <link href="https://blog.animatron.com/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="https://blog.animatron.com/atom.xml" rel="alternate" title="ANIMATRON'S LATEST AWESOMENESS" type="application/atom+xml">
+  <script src="https://blog.animatron.com/javascripts/modernizr-2.0.js"></script>
+    <script type="text/javascript" src="https://player.animatron.com/latest/bundle/animatron.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://blog.animatron.com/javascripts/libs/isInViewport.min.js"></script>
+    <script src="https://blog.animatron.com/javascripts/blog.animatron.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="https://blog.animatron.com/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="https://blog.animatron.com/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+  
+    <!-- start Mixpanel -->
+    <script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+        for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+
+        window.mixpanel_loaded = false;
+        mixpanel.init('1da7a894c2f0d0952209dbb88ef1ef59', {'loaded': function() { window.mixpanel_loaded = true; }});
+
+    $.getMixpanel = function (callback) {
+            if (window.mixpanel_loaded) {
+                callback(window.mixpanel);
+            } else {
+                var interval = setInterval(function () {
+                    if (window.mixpanel_loaded) {
+                        clearInterval(interval);
+                        callback(window.mixpanel);
+                    }
+                }, 300);
+            }
+        };
+    var performanceSupported = window.performance && window.performance.navigation;
+    $.pageNavigated = !performanceSupported || (performanceSupported && performance.navigation.type === 0);
+
+    $.startMixpanelTracking = function (page) {
+        $.getMixpanel(function (mixpanel) {
+            if (!$.pageNavigated) return;
+            var isLoggedIn = function () {
+                var cookieProps = mixpanel.cookie.props;
+                return cookieProps.$name && cookieProps.Username;
+            };
+            var intervals = [10, 30, 60, 120, 180, 240, 300];
+            var start = new Date().getTime();
+            var index = 0;
+            var intervalId = setInterval(function () {
+                if (!isLoggedIn()) {
+                    var time = ((new Date().getTime() - start) / 1000.0);
+                    if (time >= intervals[index]) {
+                        mixpanel.track('Guest Visit', {
+                            Place: 'Blog',
+                            Post: page,
+                            Duration: intervals[index]
+                        });
+                        if (++index >= intervals.length) clearInterval(intervalId);
+                    }
+                } else {
+                    mixpanel.track('Visit', {Place: 'Blog', Post: page});
+                    clearInterval(intervalId);
+                }
+            }, 10 * 1000);
+        });
+    }
+    </script>
+    <!-- end Mixpanel -->
+
+
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54387dcf1eccc025" async></script>
+  <style>
+    img.preview_hidden_image { display: none }
+  </style>
+
+    <script>
+        var _gscq = _gscq || [];
+        _gscq.push(['language', navigator.language]);
+        (function() {
+            var gscw = document.createElement('script');
+            gscw.type = 'text/javascript'; gscw.async = true;
+            gscw.src = '//widgets.getsitecontrol.com/14673/script.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gscw, s);
+        })();
+    </script>
+</head>
+
+<body   >
+  <header role="banner">
+      <nav role="navigation"><a class="animatron-logo-link" href="//www.animatron.com/landing"></a>
+<nav class="main-menu">
+    <a href="//www.animatron.com/about">About</a>
+    <a href="//www.animatron.com/pricing">Pricing</a>
+    <a href="//www.animatron.com/explore">Explore</a>
+    <a href="http://kb.animatron.com/">Help</a>
+    <a href="//forum.animatron.com/latest">Forum</a>
+    <a href="//www.animatron.com/tutorial">Tutorials</a>
+    <a href="//www.animatron.com/education">Edu</a>
+    <a href="//blog.animatron.com">Blog</a>
+</nav>
+<a href="//editor.animatron.com/#new=1" class="btn-create">create animation</a>
+</nav>
+      <h1 style="display: none"><a href="/"><span style="color:#40c4ff;">L</span><span style="color:#3dc7fc;">A</span><span style="color:#3ac9f9;">T</span><span style="color:#38ccf6;">E</span><span style="color:#35cef3;">S</span><span style="color:#32d1f0;">T</span><span style="color:#30d3ed;"> </span><span style="color:#2dd5eb;">A</span><span style="color:#2bd8e8;">W</span><span style="color:#28dae6;">E</span><span style="color:#26dce3;">S</span><span style="color:#23dfe0;">O</span><span style="color:#20e2dd;">M</span><span style="color:#1de4d9;">N</span><span style="color:#1ae7d6;">E</span><span style="color:#17ead3;">S</span><span style="color:#14edd0;">S</span></a></h1>
+
+
+
+  </header>
+  <div class="subscribe-wrapper">
+    <form class="subscribe-form">
+        <input type="email" name="email" placeholder="Email address" />
+        <button>subscribe</button>
+    </form>
+</div>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  <script type="text/javascript">$.startMixpanelTracking('https://blog.animatron.com/2016/02/23/learn-how-to-animate-your-own-selfie-photo');</script>
+  <div class="date">
+
+
+
+
+<time class='entry-date' datetime='2016-02-23T08:44:34-05:00'><span class='date'>27 Mar</span> <span class='time'>1:44 pm</span></time></div>
+
+  <header>
+    
+      <h1 class="entry-title">New methods of keeping students engaged in class</h1>
+    
+  </header>
+
+<p class="author-block">
+  
+
+<span class="byline author vcard"><span class="fn"><div class="animatron-author">
+        <a class="guest" href="https://www.linkedin.com/in/ovbedrina/en">
+          <span style="background-image: url('https://graph.facebook.com/1124887522/picture?type=square&width=100&height=100')"></span>
+          <span>Olga Bedrina</span>
+        </a>
+      </div></span></span>
+</p>
+
+<div class="entry-content">
+    <iframe src="https://publish.animatron.io/ea36f8565d2d7ee03bb90116?w=640&h=360&a=1&r=0&c=0" width="640" height="360" frameborder="0"></iframe>
+    <br/>
+    <p>Have you ever been in a situation when students were not paying too much attention in class? Doodling? Staring out the window? Wandering around their mind palaces?
+
+It is a challenge to keep students focused during the whole class; even more challenging it is to get them back on task once they zone out. One lesson teachers learn well is that you need to "<a href="http://products.brookespublishing.com/Teaching-Everyone-P468.aspx" target="_blank">recruit students' interest</a>" in learning if you want them to stay focused, successfully comprehend new material and be able to apply it in life. What are some of the new best practices that can help you in this journey?
+</p>
+
+<h2>Keep students' motivation high</h2>
+
+<p>As Larry Ferlazzo mentions in his book "<a href="http://www.edweek.org/ew/marketplace/classroom-management-expert-strategies-teaching-larry-ferlazzo.html" target="_blank">Classroom Q & As: Expert Strategies For Teaching,</a>" one of the strategies teachers should employ in an effort to keep students engaged is to help them move forward and reinforce motivation by highlighting small victories. It is important for students to feel they are making progress. For instance, try using achievement badges in class: when students finish working on a project or paper, they receive a badge that they can place on a special table and show off to their parents or fellow students.</p>
+
+<h2>Make the classroom student-based</h2>
+
+<p><a href="http://archive.brookespublishing.com/articles/ed-article-0212.htm" target="_blank">Experts emphasize</a> the necessity of using students' interests in learning. Oftentimes students do not feel like many academic topics are relevant to them, so connecting what you are teaching to real life might tremendously improve their engagement. While we might find it difficult to keep up with all new trends and spirits of the time, we can still apply some examples from modern life to make classes lively. Try putting yourself in your students' shoes and use their interests and fascinations: for instance, how about explaining the US role in WWII through Star Wars characters? Stick to something familiar that students can associate themselves with, and you bet even those kids in the back of the class will stay tuned.</p>
+
+<h2>Use new technology</h2>
+
+<p>Making students active learners is one of the best ways to keep them engaged in class. While reading the textbook out loud or working on a hand-out worksheet might still be inevitable, these activities are hardly engaging and motivating. Instead, be that awesome teacher who thinks out-of-the-box and uses new approaches to education. 
+
+According to the Visual Teaching Alliance, 90% of secondary students are visual learners, which means that using visual aids in class can dramatically improve learning and ultimately help students retain more from what they hear. At the same time, allow students to personalize the process and foster ownership of the material rather than just making them learn lessons by rote.</p>
+
+<p><em><div style="float: right">Students absolutely benefit from visuals/animation to solidify their learning on new and review concepts.</div>
+<div style="float: right; clear: both">Corinne E. Mcillece</div>
+<div style="float: right; clear: both">Ojeda Middle School, Austin, TX</div></em></p>
+<p style="clear: both"><br/></p>
+
+<p>How can you present the information in a more engaging manner? Here are some tips:</p>
+<ul>
+<li><strong>Natural Sciences.</strong> When studying the water cycle, use animation for explaining the topic rather than just drawing it on paper. Water moving around the Earth to different places is a <em>process</em>, so it would only be natural to demostrate it with an actual moving picture as opposed to a static image. 
+Another example would be to use animation for studying shadows. It would no doubt be great to <a href="http://www.savorthedays.com/2016/02/studying-shadows-on-groundhog-day.html" target="_blank">draw shadows with chalk on the driveway</a> but what if it rains on that day? Demonstrate it with a video instead!</li>
+<li><p><strong>Language.</strong> Find creative ways to explain a difficult topic. Say, you are studying contractions with students. Why not use animation to show what exactly that apostrophy in the phrase "I can't" stands for? 
+Involve students in all possible ways: for instance, when learning the word <em>"sashay"</em>, ask them to make a video demonstrating it, like <em>"She sashayed down the street"</em>. Once they finish, they now <em>own</em> the word, which makes it so much easier for them to memorize and - ultimately - use it outside the classroom.</p><br/><br/>
+<iframe src="https://publish.animatron.io/4d32f85628a29ba18512df20?w=640&h=360&a=0&r=0&c=1" width="640" height="360" frameborder="0"></iframe>
+</li>
+<li><strong>History.</strong> If you are studying pioneers' migration routes and trails, ask students to draw and animate them. Children remember things when they are unique and fun, so implement new tools and ideas to make learning engaging.</li>
+</ul>
+
+<p>Now, the problem with using animation for classes is to find out how not to spend too much time on drawing. After all, animation is not the point of the lesson; it's the vehicle that gets you there. Search for easy-to-use animation editors like <a href="https://www.animatron.com/landing" target="_blank">Animatron</a> that have various themes and a set of pre-defined images for students to use.</p>
+
+<h2>Help students collaborate</h2>
+
+<p>Students can be brought to excellence by the power of teamwork, so help them collaborate and discuss their work with each other. Make learning social by setting up a discussion on Facebook or Edmodo, ask students to share their animations or other projects and encourage them to leave feedback on each other's work, thus making them active participants and owners of the learning process.</p>
+
+<h2>Mix it all up!</h2>
+
+<p>Keeping students engaged in class is no ordinary task, and it will take effort to motivate each one of them. Helping students turn into active learners, encouraging teamwork, finding a place for new technology in classroom, praising students for small victories will engage them into the learning process on a whole new level. Give it a try and let us know how things go!</p>
+
+
+<p>-Olga</p>
+
+
+</div>
+<footer>
+    <div class="addthis_sharing_toolbox" data-url="https://blog.animatron.com/2016/02/23/learn-how-to-animate-your-own-selfie-photo/" data-title="Learn how to animate your own selfie photo" style="height: 40px;">
+        
+
+        
+    </div>
+</footer>
+
+
+
+<div class="meta clearfix">
+    
+    <a class="comments-count" href=""
+       data-disqus-identifier="http://blog.animatron.com">Comments</a>
+    
+
+    
+      
+    
+    <ul class="tag_list">
+        
+            <li class="inline archive_list"><a class="tag_list_link" href="https://blog.animatron.com/blog/categories/education/">education</a></li>
+        
+    </ul>
+</div>
+  <!--footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard"><span class="fn"><div class="animatron-author">
+        <a class="team" href="https://www.animatron.com/users/Bryce.Struck">
+          <span style="background-image: url('https://graph.facebook.com/83502813/picture?type=square&width=100&height=100')"></span>
+          <span>Bryce Struck</span>
+        </a>
+      </div></span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2016-02-23T08:44:34-05:00'><span class='date'>23 Feb</span> <span class='time'>8:44 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='https://blog.animatron.com/blog/categories/how-to/'>how-to</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="https://blog.animatron.com/2016/02/23/learn-how-to-animate-your-own-selfie-photo/" data-via="animatron" data-counturl="https://blog.animatron.com/2016/02/23/learn-how-to-animate-your-own-selfie-photo/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="https://blog.animatron.com/2016/01/29/venture-cafe-presentation/" title="Previous Post: Announcing Animatron's presentation at the Venture ?afe">&laquo; Announcing Animatron&#8217;s presentation at the Venture ?afe</a>
+      
+      
+    </p>
+  </footer-->
+</article>
+
+  <section>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <h1>categories</h1>
+<div class="categories-aside">
+    <ul>
+        <li>
+            <a href="https://blog.animatron.com/blog/categories/how-to/">How To</a>
+        </li>
+        <li>
+            <a href="https://blog.animatron.com/blog/categories/news/">News</a>
+        </li>
+        <li>
+            <a href="https://blog.animatron.com/blog/categories/editor/">Editor</a>
+        </li>
+        <li>
+            <a href="https://blog.animatron.com/blog/categories/player/">Player</a>
+        </li>
+        <li>
+            <a href="https://blog.animatron.com/blog/categories/animation/">Animations</a>
+        </li>
+    </ul>
+</div><div class="aside-block">
+    <h1>latest clips</h1>
+</div><div class="follow-aside">
+    <h1>follow us</h1>
+    <a href="https://twitter.com/animatron" title="Follow Us On Twitter" class="follow-link tw"></a>
+    <a href="https://www.facebook.com/TheAnimatron" title="Follow Us On Facebook" class="follow-link fb"></a>
+</div>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><div class="footer">
+    <a href="https://www.animatron.com/" class="copyright"></a>
+    <span>Copyright &copy; 2016 Animatron. All screenshots &copy; their respective owners.</span>
+    <div class="designed">Designed by <br><a class="clearfix" href="http://www.heyllow.com/" target="_blank"></a></div>
+    <a class="terms-of-service-link" href="https://animatron.com/terms-of-service">Terms and Conditions</a>
+    <a class="privacy-policy-link" href="https://animatron.com/privacy">Privacy Policy</a>
+    <nav class="clearfix">
+        <a class="gh" target="_blank" href="https://github.com/Animatron"></a>
+        <a class="tw" target="_blank" href="https://twitter.com/animatron"></a>
+        <a class="fb" target="_blank" href="https://www.facebook.com/TheAnimatron"></a>
+    </nav>
+</div>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'animatron';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.animatron.com/2016/02/23/learn-how-to-animate-your-own-selfie-photo/';
+        var disqus_url = 'https://blog.animatron.com/2016/02/23/learn-how-to-animate-your-own-selfie-photo/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+</body>
+</html>
